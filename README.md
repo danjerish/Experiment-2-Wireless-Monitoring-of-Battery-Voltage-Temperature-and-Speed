@@ -24,6 +24,7 @@ o	Parse and store voltage, temperature, and speed values.
 o	Display the data using real-time plots.
  
 ## Program:
+```
 clear; clc; close all;
 
 %% Simulation Setup
@@ -35,6 +36,7 @@ timeStamp = linspace(0, 10, dataPoints);
 
 %% Data Acquisition Simulation (no COM port required)
 for i = 1:dataPoints
+   
     % --- Generate fake sensor values ---
     voltage(i)     = 11 + rand()*2;     % Simulated battery voltage (11–13V)
     temperature(i) = 25 + rand()*10;    % Simulated temp (25–35°C)
